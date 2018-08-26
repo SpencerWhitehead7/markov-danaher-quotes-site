@@ -1,0 +1,22 @@
+{
+  "name": "markov_danaher_quotes_site",
+  "version": "1.0.0",
+  "description": "A website that procedurally generates John Danaher instagram posts with a markov chain",
+  "main": "client/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerWhitehead7/markov-danaher-quotes-site.git"
+  },
+  "author": "spencer whitehead",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/SpencerWhitehead7/markov-danaher-quotes-site/issues"
+  },
+  "homepage": "https://github.com/SpencerWhitehead7/markov-danaher-quotes-site#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
