@@ -9,4 +9,8 @@ app.use(express.urlencoded({extended : false}))
 
 app.use(`/`, express.static(path.join(__dirname, `../client`)))
 
+app.get(`/*`, (req, res, next) => {
+  res.redirect(`/`)
+})
+
 app.listen(1337, () => console.log(`partying hard on http://localhost:1337/`))
