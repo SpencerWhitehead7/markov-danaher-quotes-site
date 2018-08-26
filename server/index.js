@@ -13,4 +13,9 @@ app.get(`/*`, (req, res, next) => {
   res.redirect(`/`)
 })
 
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).send(`Mistakes were made.`)
+})
+
 app.listen(1337, () => console.log(`partying hard on http://localhost:1337/`))
