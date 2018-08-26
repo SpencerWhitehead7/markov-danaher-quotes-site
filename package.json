@@ -4,6 +4,8 @@
   "description": "A website that procedurally generates John Danaher instagram posts with a markov chain",
   "main": "client/index.html",
   "scripts": {
+    "start-dev": "nodemon server/index.js",
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
