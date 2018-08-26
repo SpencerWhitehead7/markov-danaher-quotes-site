@@ -1,8 +1,9 @@
 const fs = require(`fs`)
+const path = require(`path`)
 
 const markovNum = 3
 
-const markov = JSON.parse(fs.readFileSync(`./markov${markovNum}.txt`))
+const markov = JSON.parse(fs.readFileSync(path.join(__dirname, `./markov${markovNum}.txt`))) 
 
 const pickNextWord = prev => {
   const selector = Math.random()
@@ -52,6 +53,4 @@ const generateQuoteBySentences = length => {
   return sentences.join(` `)
 }
 
-const quote = generateQuoteBySentences(2)
-
-console.log(quote)
+module.exports = generateQuoteBySentences
