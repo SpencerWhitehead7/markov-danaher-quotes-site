@@ -1,6 +1,6 @@
 const generateQuoteButton = document.getElementsByTagName(`button`)[0]
 const selector = document.getElementsByTagName(`select`)[0]
-const wisdom = document.getElementById(`wisdom`)
+const body = document.getElementsByTagName(`body`)[0]
 
 let length = 1
 
@@ -14,7 +14,16 @@ generateQuoteButton.addEventListener(`click`, async event => {
   try{
     const quoteData = await fetch(`/api/${length}`, {method : `POST`})
     const quote = await quoteData.text()
-    wisdom.innerHTML = quote
+    const wisdom = document.getElementById(`wisdom`)
+    if(!wisdom){
+      const wisdomEle = document.createElement(`div`)
+      wisdomEle.id = `wisdom`
+      wisdomEle.classList.add(`center-wrapper`)
+      body.appendChild(wisdomEle)
+      wisdomEle.innerText = quote
+    }else{
+      wisdom.innerText = quote
+    }
   }catch(error){
     console.log(error)
   }
