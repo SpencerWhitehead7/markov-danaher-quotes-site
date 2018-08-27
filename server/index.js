@@ -1,12 +1,15 @@
 'use strict'
 
 const express = require(`express`)
-const app = express()
 const volleyball = require(`volleyball`)
 const path = require(`path`)
+
 const generateQuote = require(`./generateQuote`)
 
+const app = express()
+
 app.use(volleyball)
+
 app.use(express.json())
 app.use(express.urlencoded({extended : false}))
 
