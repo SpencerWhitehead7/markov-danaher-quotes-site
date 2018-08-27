@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
   text-shadow:
   -1px -1px 0 white,
   1px -1px 0 white,
@@ -30,12 +31,10 @@ body::after{
 
 h1 {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
 }
 
 #text-input-row {
   font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
 }
 
 select {
@@ -57,7 +56,6 @@ button {
   border: none;
   outline: none;
   font-size: 1.8em;
-  font-family: 'Montserrat', sans-serif;
   color: #FFFFFF;
   transition-duration: 0.5s;
   overflow: hidden;
@@ -87,7 +85,6 @@ button:active:after {
 #wisdom {
   flex-basis: 0;
   font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
   margin: 75px 50px 0px 50px;
   padding: 10px 10px 10px 10px;
   border: solid lightgray 1px;
