@@ -2,12 +2,23 @@
 
 ## What is this
 
-This is a website that procedurally generates instagram posts in the style of John Danaher based on a Markov chain of his social media posts. Who is that and why make a site for this, you ask? Danaher is a (relatively) famous brazilian jiu jitsu coach, especially known in the community for his lengthy and, let's say, distinctively, written social media posts. As a longtime follower of his, I recently used his considerable corpus of work to procedurally generate Danaher-y quotes with a Markov chain, and I thought it was worth turning into a website other people could check out. The original scripts are here: https://github.com/SpencerWhitehead7/markov-danaher-quotes
-) 
+This is a website that procedurally generates instagram posts in the style of John Danaher, based on a Markov chain generated from his social media posts. Who is that and why do this, you ask? Danaher is a (relatively) famous brazilian jiu jitsu coach, who makes lengthy and, let's say, distinctively, written social media posts. I'm a longtime social media follower of his with an interest in procedural generation, and I recently used his considerable corpus of work to make a program that procedurally generates Danaher-y quotes with a Markov chain. He doesn't have enough writing to make a chain that always produces truly stunning quotes (yet), but I thought it was cool enough to tun into a website for other people could check out.
+
+The original scripts are here: https://github.com/SpencerWhitehead7/markov-danaher-quotes
+
+The deployed website is here: Coming soon!
+
 ### Additional context:
 
-https://www.newyorker.com/culture/persons-of-interest/the-jujitsu-master-turning-an-ancient-art-into-a-modern-science
-https://en.wikipedia.org/wiki/Markov_chain
+https://www.newyorker.com/culture/persons-of-interest/the-jujitsu-master-turning-an-ancient-art-into-a-modern-science (news article about the team)
+
+https://www.instagram.com/p/Bm1rtgJBLTS/?taken-by=danaherjohn (representative post)
+
+https://www.youtube.com/watch?v=rIzroXoyn2Y (talking about bjj)
+
+https://www.youtube.com/watch?v=g06mHKoEl7g (official video of a match mentioned in the article, Tonon vs Palhares at Polaris 3)
+
+https://en.wikipedia.org/wiki/Markov_chain (what is a markov chain)
 
 
 ## Future Plans
