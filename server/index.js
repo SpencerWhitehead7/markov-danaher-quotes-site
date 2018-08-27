@@ -28,4 +28,6 @@ app.use((req, res, next) => {
   res.status(404).send(`Nothing here. Sorry. Also, how did you get past the res.redirect?`)
 })
 
-app.listen(1337, () => console.log(`partying hard on http://localhost:1337/`))
+const PORT = process.env.PORT || 1337
+
+app.listen(PORT, () => console.log(`\nPartying hard on http://localhost:${PORT}\n`))
