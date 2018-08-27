@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Danaher Quotes</title>
+    <title>Danaher Wisdom Generator</title>
+    <link rel="icon" href="/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type='text/javascript' src='app.js' defer></script>
   </head>
 
   <body>
     
-    <h1>Procedural John Danaher Wisdom Generator</h1>
+    <h1>A Procedural John Danaher Wisdom Generator</h1>
     
     <div class="center-wrapper">
-      <p class="text-input-row">Hit me with&nbsp</p>
+      <p id="text-input-row">Hit me with&nbsp</p>
       <select>
         <option value=1>a bit of</option>
         <option value=5>some</option>
         <option value=10>a lot of</option>
         <option value=100>a ton of</option>
       </select>
-      <p class="text-input-row">&nbspwisdom, Danaher!</p>
+      <p id="text-input-row">&nbspwisdom, Danaher!</p>
     </div>
 
     <div class="center-wrapper">
       <button class="pure-button pure-button-primary">Generate Wisdom</button>
     </div>
 
-    <div id="wisdom" class="center-wrapper">
-    </div>
-
-    <script type='text/javascript' src='app.js'></script>
   
   </body>
 </html>

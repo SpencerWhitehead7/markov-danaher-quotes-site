@@ -10,16 +10,19 @@ html {
 
 h1 {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.text-input-row {
-  font-size: 24px;
+#text-input-row {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 select {
   text-align: center;
   text-align-last: center;
-  font-size: 24px;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
   background-color: transparent;
   border: none;
   outline: none;
@@ -33,7 +36,8 @@ button {
   border-radius: 10px;
   border: none;
   outline: none;
-  font-size: 24px;
+  font-size: 1.8em;
+  font-family: 'Montserrat', sans-serif;
   color: #FFFFFF;
   transition-duration: 0.5s;
   overflow: hidden;
