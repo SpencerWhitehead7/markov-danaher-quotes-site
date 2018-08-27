@@ -63,3 +63,12 @@ button:active:after {
   opacity: 1;
   transition: 0s
 }
+
+#wisdom {
+  flex-basis: 0;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  margin: 75px 50px 0px 50px;
+  padding: 10px 10px 10px 10px;
+  border: solid lightgray 1px;
+}
