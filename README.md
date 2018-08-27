@@ -6,7 +6,7 @@ This is a website that procedurally generates instagram posts in the style of Jo
 
 The original scripts are here: https://github.com/SpencerWhitehead7/markov-danaher-quotes
 
-The deployed website is here: Coming soon!
+The deployed website is here: https://markov-danaher-quotes.herokuapp.com/
 
 ### Additional context:
 
