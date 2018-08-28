@@ -10,9 +10,6 @@ const app = express()
 
 app.use(volleyball)
 
-app.use(express.json())
-app.use(express.urlencoded({extended : false}))
-
 app.use(`/`, express.static(path.join(__dirname, `../client`)))
 
 app.post(`/api/:length`, (req, res, next) => {
