@@ -2,34 +2,37 @@
 <html lang="en">
   <head>
     <title>Danaher Wisdom Generator</title>
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script type='text/javascript' src='app.js' defer></script>
+    <link rel="icon" href="favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+    <script type="text/javascript" src="app.js" defer></script>
   </head>
 
   <body>
     
-    <h1>A Procedural John Danaher Wisdom Generator</h1>
+    <div id="bg"></div>
     
+    <h1 class="center-wrapper">A Procedural John Danaher Wisdom Generator</h1>
+      
     <div class="center-wrapper">
-      <p id="text-input-row">Hit me with&nbsp</p>
+      <p class="text-input-row">Hit me with&nbsp;</p>
       <select>
-        <option value=1>a bit of</option>
-        <option value=5>some</option>
-        <option value=10>a lot of</option>
-        <option value=100>a ton of</option>
+        <option value="1">a bit of</option>
+        <option value="5">some</option>
+        <option value="10">a lot of</option>
+        <option value="100">a ton of</option>
       </select>
-      <p id="text-input-row">&nbspwisdom, Danaher!</p>
+      <p class="text-input-row">&nbsp;wisdom, Danaher!</p>
     </div>
-
+    
     <div class="center-wrapper">
       <button class="pure-button pure-button-primary">Generate Wisdom</button>
     </div>
-    
+
     <div id="github-link" class="center-wrapper">
-      <a href="https://github.com/SpencerWhitehead7/markov-danaher-quotes-site">What is this site even?</a>
-    </div>
+        <a href="https://github.com/SpencerWhitehead7/markov-danaher-quotes-site">What is this site even?</a>
+      </div>
 
   </body>
+
 </html>

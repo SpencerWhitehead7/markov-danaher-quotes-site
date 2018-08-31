@@ -8,18 +8,17 @@ body {
   1px 1px 0 white;
 }
 
-body::after{
-  content: "";
-  background: url('bg.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  opacity: 0.2;
+#bg {
+  position: fixed;
+  background-image: url("bg.png");
+  opacity: .2;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  position: absolute;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: -1;
 }
 
@@ -29,11 +28,7 @@ body::after{
   align-items: center;
 }
 
-h1 {
-  text-align: center;
-}
-
-#text-input-row {
+.text-input-row {
   font-size: 2em;
 }
 
@@ -85,7 +80,7 @@ button:active:after {
 #wisdom {
   flex-basis: 0;
   font-size: 1.5em;
-  margin: 75px 50px 0px 50px;
+  margin: 50px 50px 50px 50px;
   padding: 10px 10px 10px 10px;
   border: solid lightgray 1px;
 }
