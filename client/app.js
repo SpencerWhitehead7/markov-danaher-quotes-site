@@ -1,6 +1,6 @@
 const generateQuoteButton = document.getElementsByTagName(`button`)[0]
 const selector = document.getElementsByTagName(`select`)[0]
-const body = document.getElementsByTagName(`body`)[0]
+const githubLink = document.getElementById(`github-link`)
 
 let length = 1
 
@@ -19,7 +19,7 @@ generateQuoteButton.addEventListener(`click`, async event => {
       const wisdomEle = document.createElement(`div`)
       wisdomEle.id = `wisdom`
       wisdomEle.classList.add(`center-wrapper`)
-      body.appendChild(wisdomEle)
+      githubLink.parentNode.insertBefore(wisdomEle, githubLink)
       wisdomEle.innerText = quote
     }else{
       wisdom.innerText = quote
