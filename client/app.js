@@ -29,4 +29,4 @@ generateQuoteButton.addEventListener(`click`, async event => {
     console.log(error)
   }
 })
-  
+
