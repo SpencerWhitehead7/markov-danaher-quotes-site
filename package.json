@@ -4,9 +4,11 @@
   "description": "A website that procedurally generates John Danaher instagram posts with a markov chain",
   "main": "client/index.html",
   "scripts": {
-    "start-dev": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx --ignore-pattern /public/*",
+    "lint-fix": "eslint . --ext .js,.jsx --fix --ignore-pattern /public/*",
     "start": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "nodemon server"
   },
   "repository": {
     "type": "git",
