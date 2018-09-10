@@ -20,7 +20,6 @@ generateQuoteButton.addEventListener(`click`, async event => {
       wisdomEle.id = `wisdom`
       wisdomEle.classList.add(`center-wrapper`)
       content.append(wisdomEle)
-      // githubLink.parentNode.insertBefore(wisdomEle, githubLink)
       wisdomEle.innerText = quote
     }else{
       wisdom.innerText = quote
@@ -29,4 +28,3 @@ generateQuoteButton.addEventListener(`click`, async event => {
     console.log(error)
   }
 })
-
