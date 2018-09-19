@@ -10,7 +10,7 @@ const app = express()
 app.use(volleyball)
 
 // Static file serving middleware
-app.use(`/`, express.static(path.join(__dirname, `../client`)))
+app.use(express.static(path.join(__dirname, `../client`)))
 
 // API call to generate quote
 app.post(`/api/:length`, (req, res, next) => {
@@ -18,7 +18,7 @@ app.post(`/api/:length`, (req, res, next) => {
 })
 
 // All other requests
-app.get(`/*`, (req, res, next) => {
+app.get(`*`, (req, res, next) => {
   res.redirect(`/`)
 })
 
