@@ -37,6 +37,8 @@ app.use((err, req, res, next) => {
   res.send(err.message || `Internal Server Error`)
 })
 
+// Define port
 const PORT = process.env.PORT || 1337
 
+// Start server
 app.listen(PORT, () => console.log(`\nPartying hard on http://localhost:${PORT}\n`))
