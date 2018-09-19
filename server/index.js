@@ -18,14 +18,17 @@ app.get(`/*`, (req, res, next) => {
   res.redirect(`/`)
 })
 
+app.use((req, res, next) => {
+  const err = new Error(`Page Not Found. How did you even make it past the redirect?`)
+  err.status = 404
+  next(err)
+})
+
 app.use((err, req, res, next) => {
   console.error(err)
   console.error(err.stack)
-  res.status(err.status || 500).send(err.message || `Internal Server Error`)
-})
-
-app.use((req, res, next) => {
-  res.status(404).send(`Nothing here. Sorry. Also, how did you get past the res.redirect?`)
+  res.status(err.status || 500)
+  res.send(err.message || `Internal Server Error`)
 })
 
 const PORT = process.env.PORT || 1337
