@@ -98,3 +98,11 @@ footer {
   width: 100%;
   margin-bottom: 20px;
 }
+
+/* Fake Instagram tile styles */
+
+#black-filler {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+}
