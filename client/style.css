@@ -13,7 +13,7 @@ body {
 
 #bg {
   position: fixed;
-  background-image: url("bg.png");
+  background-image: url("images/bg.png");
   opacity: .2;
   top: 0;
   left: 0;
@@ -101,8 +101,45 @@ footer {
 
 /* Fake Instagram tile styles */
 
+#insta-tile-wrapper {
+  display: none;
+}
+
+#insta-tile {
+  background-color: #ffffff;
+  height: 600px;
+  width: 950px;
+  border: 1px solid lightgrey;
+  margin: 100px 0px;
+}
+
 #black-filler {
   background-color: black;
   width: 600px;
   height: 600px;
+}
+
+#photo {
+  width: 100%
+}
+
+#insta-header {
+  padding: 20px 0px;
+}
+
+#quote-container {
+  margin-left: 40px;
+  width: 310px;
+  height: 310px;
+  overflow-y: scroll;
+}
+
+#quote-container > div {
+  padding: 5px 0px;
+  border-top: 1px solid lightgrey; 
+}
+
+#instabottom {
+  margin-left: 40px;
+  border-top: 1px solid lightgrey; 
 }
