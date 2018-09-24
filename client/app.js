@@ -1,7 +1,7 @@
 {
   document.getElementsByTagName(`button`)[0].addEventListener(`click`, async () => {
     try{
-      const borderContainerEle = document.getElementById(`border-container`)
+      const quoteContainerEle = document.getElementById(`quote-container`)
       const imageEle = document.getElementById(`image`)
       const [quoteData, imageData] = await Promise.all([
         fetch(`/api/generatequote`, {method : `POST`}),
@@ -14,8 +14,8 @@
       const src = URL.createObjectURL(image)
       imageEle.src = src
 
-      const borderContainerEleInnerHTML = `<b>danaherjohn </b> ${quote}`
-      borderContainerEle.innerHTML = borderContainerEleInnerHTML
+      const quoteContainerEleInnerHTML = `<b>danaherjohn </b>${quote}`
+      quoteContainerEle.innerHTML = quoteContainerEleInnerHTML
 
       const timestampEle = document.getElementById(`timestamp`)
       const likesEle = document.getElementById(`likes`)
