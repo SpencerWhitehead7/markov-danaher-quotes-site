@@ -2,8 +2,18 @@
   document.getElementsByTagName(`button`)[0].addEventListener(`click`, async () => {
     try{
       const borderContainerEle = document.getElementById(`border-container`)
-      const quoteData = await fetch(`/api/generatequote`, {method : `POST`})
-      const quote = await quoteData.text()
+      const imageEle = document.getElementById(`image`)
+      const [quoteData, imageData] = await Promise.all([
+        fetch(`/api/generatequote`, {method : `POST`}),
+        fetch(`api/getimage`, {method : `GET`}),
+      ])
+      const [quote, image] = await Promise.all([
+        quoteData.text(),
+        imageData.blob(),
+      ])
+      const src = URL.createObjectURL(image)
+      imageEle.src = src
+
       const borderContainerEleInnerHTML = `<b>danaherjohn </b> ${quote}`
       borderContainerEle.innerHTML = borderContainerEleInnerHTML
 
