@@ -92,40 +92,60 @@ footer {
 }
 
 #insta-tile {
+  display: flex;
   background-color: #ffffff;
-  height: 600px;
-  width: 950px;
-  border: 1px solid lightgrey;
-  margin: 40px 0px;
+  height: 450px;
+  width: 935px;
+  border: 1px solid #eeeeef;
+  margin: 50px 0px;
 }
 
 #black-filler {
   background-color: black;
   width: 600px;
-  height: 600px;
+  height: 450px;
 }
 
 #image {
-  width: 100%
+  height: 100%
 }
 
 #insta-header {
-  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+  margin-left: 20px;
+  font-size: 10pt;
 }
 
 #quote-container {
-  margin-left: 40px;
-  width: 310px;
-  height: 310px;
+  margin-left: 20px;
+  width: 295px;
+  height: 200px;
   overflow-y: scroll;
+  padding: 5px 10px;
+  font-size: 9pt;
+  border-top: 1px solid #eeeeef;
+  border-bottom: 1px solid #eeeeef;
 }
 
-#quote-container > div {
-  padding: 5px 0px;
-  border-top: 1px solid lightgrey; 
+#likes {
+  font-size: 10pt;
+}
+
+#timestamp {
+  font-size: 8pt;
+  color: #989898;
 }
 
 #instabottom {
-  margin-left: 40px;
-  border-top: 1px solid lightgrey; 
+  margin: 0px 20px;
+}
+
+#login-and-icon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10pt;
+  padding: 20px 0px;
+  border-top: 1px solid #eeeeef;
 }
