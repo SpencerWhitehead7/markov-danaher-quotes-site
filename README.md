@@ -23,4 +23,10 @@ https://en.wikipedia.org/wiki/Markov_chain (what is a markov chain)
 
 ## Future Plans
 
-I'd like to make the website nice and slick and perhaps style it (or maybe just the part that displays the quote) to resemble instagram. Also, it would be nice if it randomly selected some Danaher picture(s) to go with the quotes.
+Maybe keep improving the match with a real Instagram tile and scrape some better, higher quality photos to go with the quotes instead of the not-amazing collection I have right now.
+
+It might also be worth making a second fake Instagram tile layout that resembles how posts appear in the Instagram app that would show up for mobile viewers.
+
+I'll need to change the fake Instagram post tile(s) every time Instagram changes them as well.
+
+A way to mock up fake comments would also be amazing, but I'm not sure it's possible.
