@@ -13,8 +13,8 @@ app.use(volleyball)
 app.use(express.static(path.join(__dirname, `../client`)))
 
 // API call to generate quote
-app.post(`/api/:length`, (req, res, next) => {
-  res.send(generateQuote(req.params.length))
+app.post(`/api/generatequote`, (req, res, next) => {
+  res.send(generateQuote(5))
 })
 
 // All other requests

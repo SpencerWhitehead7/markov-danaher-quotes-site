@@ -25,31 +25,21 @@ body {
   z-index: -1;
 }
 
+#content {
+  flex: 1;
+}
+
 .center-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.text-input-row {
-  font-size: 2em;
-}
-
-select {
-  text-align: center;
-  text-align-last: center;
-  font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
 button {
   position: relative;
   background-color: blue;
-  height: 75px;
-  width: 225px;
+  height: 100px;
+  width: 320px;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -86,10 +76,6 @@ button:active:after {
   margin: 50px;
   padding: 10px;
   border: solid lightgray 1px;
-}
-
-#content {
-  flex: 1;
 }
 
 footer {
