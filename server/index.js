@@ -17,6 +17,11 @@ app.post(`/api/generatequote`, (req, res, next) => {
   res.send(generateQuote(5))
 })
 
+app.get(`/api/getimage`, (req, res, next) => {
+  const imageNo = Math.round(Math.random() * 47)
+  res.sendFile(path.join(__dirname, `images/image${imageNo}.png`))
+})
+
 // All other requests
 app.get(`*`, (req, res, next) => {
   res.redirect(`/`)
